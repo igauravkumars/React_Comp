@@ -18,11 +18,18 @@
 
     let MyRoot = ReactDOM.createRoot(root)
 
-     
+     function Greeting({message,name}){
+          return (
+            <>{message} {name}</>
+          )
+     }
 
     function App(){
         return(
-            <>hii</>
+            <>
+            <Greeting message="Hello"/>
+            <Greeting name = "Gaurav"/>
+            </>
         )
     }
 
